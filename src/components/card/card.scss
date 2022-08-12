@@ -1,0 +1,64 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 210px;
+	height: 260px;
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 40px;
+	padding: 0 28px;
+	margin: 0 30px 30px 0;
+	position: relative;
+	transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+	&:hover {
+		box-shadow: 0px 20px 35px rgba(0, 0, 0, $alpha: 0.06);
+		transform: translateY(-5px);
+	}
+	.favorite-sneakers {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		top: 29px;
+		left: 36px;
+		cursor: pointer;
+	}
+	&__img {
+		width: 133px;
+		height: 112px;
+		margin: 20px 0 14px 0;
+	}
+	&__info {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		margin: 0;
+	}
+	.price__block {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 14px;
+		&_value {
+			margin-right: 38px;
+			.price-text {
+				display: block;
+				font-weight: 500;
+				font-size: 11px;
+				line-height: 13px;
+				text-transform: uppercase;
+				color: #bdbdbd;
+			}
+			.price {
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+			}
+		}
+		.btn-add-cart {
+			width: 32px;
+			height: 32px;
+			cursor: pointer;
+		}
+	}
+}

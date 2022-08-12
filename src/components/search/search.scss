@@ -1,0 +1,24 @@
+.search__block {
+	position: relative;
+	svg {
+		position: absolute;
+		top: 14px;
+		left: 18px;
+	}
+	input {
+		width: 200px;
+		height: 45px;
+		border: 1px solid #f3f3f3;
+		border-radius: 10px;
+		padding: 15px 0 15px 46px;
+		&::placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: #c4c4c4;
+		}
+		&:focus {
+			outline: 2px solid #2196f3;
+		}
+	}
+}
